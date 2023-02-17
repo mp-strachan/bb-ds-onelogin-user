@@ -1,0 +1,94 @@
+{
+  "type": "datasource",
+  "metadata": {},
+  "schema": {
+    "docs": "https://developers.onelogin.com/api-docs",
+    "friendlyName": "OneLogin - Users",
+    "type": "API",
+    "description": "Connect to OneLogin's User API",
+    "datasource": {
+      "url": {
+        "type": "string",
+        "required": true,
+        "display": "Subdomain"
+      },
+      "clientID": {
+        "type": "password",
+        "required": true,
+        "display": "Client ID"
+      },
+      "clientSecret": {
+        "type": "password",
+        "required": true,
+        "display": "Client Secret"
+      }
+    },
+    "query": {
+      "create": {
+        "type": "fields",
+        "fields": {
+          "username": {
+            "type": "string",
+            "display": "Username",
+            "required": true
+          },
+          "email": {
+            "type": "string",
+            "display": "Email",
+            "required": true
+          },
+          "payload": {
+            "type": "json",
+            "display": "Payload",
+            "required": true
+          }
+        }
+      },
+      "read": {
+        "type": "fields",
+        "fields": {
+          "id": {
+            "type": "number",
+            "display": "User ID (blank for all users)",
+            "default":  0,
+            "required": true
+          },
+          "fields": {
+            "type": "text",
+            "display": "Fields (CSV)",
+            "required": false
+          },
+          "scopeFilter": {
+            "type": "text",
+            "display": "Scope Filter (all users)",
+            "required": false
+          }
+        }
+      },
+      "update": {
+        "type": "fields",
+        "fields": {
+          "id": {
+            "type": "string",
+            "display": "User ID",
+            "required": true
+          },
+          "payload": {
+            "type": "json",
+            "display": "Payload",
+            "required": true
+          }
+        }
+      },
+      "delete": {
+        "type": "fields",
+        "fields": {
+          "id": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}
