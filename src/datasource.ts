@@ -110,7 +110,7 @@ class CustomIntegration implements IntegrationBase {
     let queries: string = "";
     let hasFields: boolean = false;
 
-    if (query.fields !== "" || typeof query.id === 'undefined') {
+    if (query.fields === "" || query.fields === "0" || typeof query.id === 'undefined') {
       path = "/api/2/users";
     } else {
       const userID: number = +query.id;
