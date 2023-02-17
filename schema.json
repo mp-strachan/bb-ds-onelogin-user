@@ -48,9 +48,8 @@
         "type": "fields",
         "fields": {
           "id": {
-            "type": "number",
+            "type": "text",
             "display": "User ID (blank for all users)",
-            "default":  0,
             "required": true
           },
           "fields": {

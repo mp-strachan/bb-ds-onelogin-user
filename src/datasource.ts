@@ -104,16 +104,16 @@ class CustomIntegration implements IntegrationBase {
   }
 
 
-  async read(query: { id: number, fields: string, scopeFilter: string}) {
+  async read(query: { id: string, fields: string, scopeFilter: string}) {
     let uri: string = "";
-    let path: string = "";
+    let path: string;
     let queries: string = "";
     let hasFields: boolean = false;
 
-    if (query.id === 0 || typeof query.id === 'undefined') {
+    if (query.fields !== "" || typeof query.id === 'undefined') {
       path = "/api/2/users";
     } else {
-      const userID: number = query.id;
+      const userID: number = +query.id;
       path = "/api/2/users/" + userID.toString();
     }
 

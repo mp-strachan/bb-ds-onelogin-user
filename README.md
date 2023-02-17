@@ -11,11 +11,11 @@ OneLogin User API docs: [OneLogin](https://developers.onelogin.com/api-docs/2/us
 
 > ### Notes
 >    * The API key must have `Manage Users` permissions to operate correctly
->    * If you only want the plugin to read user data, set your API key for `Read Users`
+>    * If you only want the plugin to read user data, set your API key for `Read Users`<br><br>
 > ![API Key Setup](docs/apikeysetup.png)
 
 3. Add the plugin as a datasource to your application
-4. When prompted to configure the plug, supply your OneLogin subdomain, and your API client ID and secret generated above.
+4. When prompted to configure the plug, supply your OneLogin subdomain, and your API client ID and secret generated above.<br>
    ![API Key Setup](docs/initialconfig.png)
 
 ## Query: Read

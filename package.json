@@ -1,6 +1,6 @@
 {
   "name": "bb-ds-onelogin-user",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Budibase Datasource plugin to interface with the OneLogin User API",
   "main": "src/index.ts",
   "author": "Matthew Strachan",
