@@ -1,19 +1,16 @@
-# Bb-ds-onelogin-user
-This is a readme for your new Budibase plugin.
+# Budibase - OneLogin User Datasource Plugin
+A Budibase plugin to interface with the OneLogin User API
 
-# Description
-A Budibase Datasource plugin to interface with the OneLogin User API
-
+# Reference
 Find out more about [Budibase](https://github.com/Budibase/budibase).
 
-## Instructions
+OneLogin User API docs: [OneLogin](https://developers.onelogin.com/api-docs/2/users).
+
+## Quick Start
+
+## Local build instructions
 
 To build your new  plugin run the following in your Budibase CLI:
 ```
 budi plugins --build
-```
-
-You can also re-build everytime you make a change to your plugin with the command:
-```
-budi plugins --watch
 ```
